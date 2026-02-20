@@ -9,7 +9,7 @@ Python IDE
 # Program
 
 ## Ideal Sampling
-```
+```py
 # Impulse Sampling
 import numpy as np
 import matplotlib.pyplot as plt
