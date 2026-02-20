@@ -52,8 +52,7 @@ plt.show()
 ```
 
 ## Natural Sampling 
-```
-
+```py
 # #Natural sampling
 import numpy as np
 import matplotlib.pyplot as plt
@@ -106,8 +105,7 @@ plt.show()
 ```
 
 ## Flat-top Sampling
-```
-
+```py
 #Flat-top Sampling
 import numpy as np
 import matplotlib.pyplot as plt
