@@ -19,6 +19,7 @@ t = np.arange(0, 1, 1/fs)
 f = 5
 signal = np.sin(2 * np.pi * f * t)
 plt.figure(figsize=(10, 4))
+plt.suptitle("NAME : BHARATH B\nREG NO : 212224060041",fontsize=12, fontweight='bold', y=1.05)
 plt.plot(t, signal, label='Continuous Signal')
 plt.title('Continuous Signal (fs = 100 Hz)')
 plt.xlabel('Time [s]')
@@ -48,7 +49,6 @@ plt.ylabel('Amplitude')
 plt.grid(True)
 plt.legend()
 plt.show()
-
 ```
 
 ## Natural Sampling 
@@ -84,6 +84,7 @@ def lowpass_filter(signal, cutoff, fs, order=5):
 reconstructed_signal = lowpass_filter(reconstructed_signal,10, fs)
 plt.figure(figsize=(14, 10))
 plt.subplot(4, 1, 1)
+plt.suptitle("NAME : BHARATH B\nREG NO : 212224060041",fontsize=12, fontweight='bold')
 plt.plot(t, message_signal, label='Original Message Signal')
 plt.legend()
 plt.grid(True)
@@ -102,7 +103,6 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.show()
-
 ```
 
 ## Flat-top Sampling
@@ -140,6 +140,7 @@ cutoff_freq = 2 * fm # Nyquist rate or slightly higher
 reconstructed_signal = lowpass_filter(flat_top_signal, cutoff_freq, fs)
 plt.figure(figsize=(14, 10))
 plt.subplot(4, 1, 1)
+plt.suptitle("NAME : BHARATH B\nREG NO : 212224060041",fontsize=12, fontweight='bold')
 plt.plot(t, message_signal, label='Original Message Signal')
 plt.title('Original Message Signal')
 plt.xlabel('Time (s)')
@@ -170,21 +171,20 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.show()
-
 ```
 # Output Waveform
 
 ## Ideal Sampling
 
-<img width="723" height="986" alt="image" src="https://github.com/user-attachments/assets/7dc96400-adc0-409a-853f-136608567ac4" />
+<img width="815" height="756" alt="image" src="https://github.com/user-attachments/assets/e4ddfa14-d7f0-4257-8869-510a1400b793" />
 
 ## Natural Sampling 
 
-<img width="1159" height="824" alt="image" src="https://github.com/user-attachments/assets/39d5dc91-9ff5-4a01-a8c9-02e662865406" />
+<img width="1305" height="926" alt="image" src="https://github.com/user-attachments/assets/a4aa264b-4730-4308-aaec-0f0f8ef77118" />
 
 ## Flat-top Sampling
 
-<img width="1170" height="831" alt="image" src="https://github.com/user-attachments/assets/d20c7f7d-7cf3-4b30-899f-befa11ddc88e" />
+<img width="1317" height="929" alt="image" src="https://github.com/user-attachments/assets/9efa23c1-75ee-4a02-a6a4-abb25ff663f9" />
 
 # Results
 Thus, the construction and reconstruction of Ideal, Natural, and Flat-top sampling were successfully implemented using Python, and the corresponding waveforms were obtained.
